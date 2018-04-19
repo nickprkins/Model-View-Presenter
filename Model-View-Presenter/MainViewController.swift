@@ -1,15 +1,12 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Model-View-Presenter
 //
 //  Created by Nick Perkins on 4/19/18.
-//  Copyright © 2018 Nicholas Perkins. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
