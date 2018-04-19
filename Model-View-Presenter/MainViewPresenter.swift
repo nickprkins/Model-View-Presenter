@@ -8,6 +8,8 @@ import Foundation
 import UIKit
 
 class MainViewPresenter {
+    //Variables
+    //For security model is private to prevent access from other objects
     private var model = MainModel(liked: false)
     var likeButtonTitle: String {
         return model.liked ? "Dislike" : "Like"
@@ -21,6 +23,7 @@ class MainViewPresenter {
     }
 }
 
+//MARK: Model
 struct MainModel {
     var liked: Bool
 }

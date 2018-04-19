@@ -7,16 +7,36 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    let presenter: MainViewPresenter!
+    var mainView: MainView { return self.view as! MainView }
+    
+    //MARK: Initializer
+    init(with presenter: MainViewPresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        mainView.likeAction = { [weak self] in self?.likeAction() }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK: Methods
+    private func likeAction() {
+        presenter.updateLike()
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.mainView.likeButton.setTitle(self.presenter.likeButtonTitle, for: .normal)
+            self.mainView.contentView.backgroundColor = self.presenter.viewColor
+        })
     }
-
-
+    
+    override func loadView() {
+        self.view = MainView(frame: UIScreen.main.bounds)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
