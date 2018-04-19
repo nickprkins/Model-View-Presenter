@@ -14,6 +14,7 @@
 		8C206F2C2088CCDA000A7F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C206F2A2088CCDA000A7F36 /* LaunchScreen.storyboard */; };
 		8C206F372088CCDA000A7F36 /* Model_View_PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206F362088CCDA000A7F36 /* Model_View_PresenterTests.swift */; };
 		8C206F422088CD93000A7F36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206F412088CD93000A7F36 /* MainView.swift */; };
+		8C206F442088D374000A7F36 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C206F432088D374000A7F36 /* MainViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8C206F362088CCDA000A7F36 /* Model_View_PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_View_PresenterTests.swift; sourceTree = "<group>"; };
 		8C206F382088CCDA000A7F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C206F412088CD93000A7F36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8C206F432088D374000A7F36 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				8C206F2A2088CCDA000A7F36 /* LaunchScreen.storyboard */,
 				8C206F2D2088CCDA000A7F36 /* Info.plist */,
 				8C206F412088CD93000A7F36 /* MainView.swift */,
+				8C206F432088D374000A7F36 /* MainViewPresenter.swift */,
 			);
 			path = "Model-View-Presenter";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				8C206F242088CCDA000A7F36 /* MainViewController.swift in Sources */,
 				8C206F422088CD93000A7F36 /* MainView.swift in Sources */,
+				8C206F442088D374000A7F36 /* MainViewPresenter.swift in Sources */,
 				8C206F222088CCDA000A7F36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
